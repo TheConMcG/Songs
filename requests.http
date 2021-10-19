@@ -1,0 +1,30 @@
+GET http://localhost:3000/songs
+
+###
+GET http://localhost:3000/songs/2
+
+###
+POST http://localhost:3000/songs.json
+content-type: application/json
+
+{
+  "title": "New Song",
+  "artist": "new artist",
+  "album": "new album",
+  "year": "new year"
+}
+
+###
+PATCH http://localhost:3000/songs/4
+content-type: application/json
+
+{
+  "title": "song2",
+  "artist": "artist2",
+  "album": "album2",
+  "year": "year2"
+}
+
+###
+DELETE http://localhost:3000/songs/4
+
